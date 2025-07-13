@@ -1,14 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React, { useState } from 'react';
+import { WelcomeScreen } from '@/components/welcome-screen';
+import { Dashboard } from '@/components/dashboard';
+import { NetWorthDetail } from '@/components/networth-detail';
+import { AffordabilityScore } from '@/components/affordability-score';
+import { PeerBenchmark } from '@/components/peer-benchmark';
+import { GoalPlanner } from '@/components/goal-planner';
 
 const Index = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  const [currentScreen, setCurrentScreen] = useState('welcome');
+
+  const handleNavigate = (screen: string) => {
+    setCurrentScreen(screen);
+  };
+
+  const renderScreen = () => {
+    switch (currentScreen) {
+      case 'welcome':
+        return <WelcomeScreen onGetStarted={() => handleNavigate('dashboard')} />;
+      case 'dashboard':
+        return <Dashboard onNavigate={handleNavigate} />;
+      case 'networth':
+        return <NetWorthDetail onNavigate={handleNavigate} />;
+      case 'affordability':
+        return <AffordabilityScore onNavigate={handleNavigate} />;
+      case 'peer-benchmark':
+        return <PeerBenchmark onNavigate={handleNavigate} />;
+      case 'goals':
+        return <GoalPlanner onNavigate={handleNavigate} />;
+      default:
+        return <Dashboard onNavigate={handleNavigate} />;
+    }
+  };
+
+  return renderScreen();
 };
 
 export default Index;

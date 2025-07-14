@@ -8,34 +8,34 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* TrueWorth Brand Colors - Soft & Professional */
-    --background: 42 100% 98%;
-    --foreground: 210 11% 15%;
+    /* Experian-inspired colors - Professional navy & sky blue */
+    --background: 0 0% 100%;
+    --foreground: 216 54% 19%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 11% 15%;
+    --card-foreground: 216 54% 19%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 11% 15%;
+    --popover-foreground: 216 54% 19%;
 
-    /* Primary: Mint green for trust and growth */
-    --primary: 158 64% 52%;
+    /* Primary: Deep navy blue (Experian's main color) */
+    --primary: 216 54% 19%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 158 64% 92%;
+    --primary-light: 216 54% 95%;
 
-    /* Secondary: Soft blue for reliability */
-    --secondary: 201 96% 85%;
-    --secondary-foreground: 210 11% 15%;
+    /* Secondary: Light sky blue backgrounds */
+    --secondary: 204 100% 94%;
+    --secondary-foreground: 216 54% 19%;
 
-    /* Muted: Warm off-white for backgrounds */
-    --muted: 42 38% 96%;
-    --muted-foreground: 210 6% 46%;
+    /* Muted: Very light blue-grey */
+    --muted: 210 16% 96%;
+    --muted-foreground: 216 12% 64%;
 
-    /* Accent: Light blue for highlights */
-    --accent: 201 96% 92%;
-    --accent-foreground: 210 11% 15%;
+    /* Accent: Pink/magenta for CTAs */
+    --accent: 335 78% 56%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Financial colors */
+    /* Financial colors - keeping meaningful colors */
     --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 50%;
@@ -44,9 +44,9 @@ All colors MUST be HSL.
     --destructive-foreground: 0 0% 100%;
 
     /* Border and inputs */
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 158 64% 52%;
+    --border: 216 12% 84%;
+    --input: 216 12% 84%;
+    --ring: 216 54% 19%;
 
     --radius: 0.5rem;
 
